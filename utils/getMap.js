@@ -1,3 +1,6 @@
+import {API_KEY} from 'react-native-dotenv';
+
+
 const API_KEY = process.env.MAP_API_KEY;
 
 export const getMapUri = (lon, lat) => {
