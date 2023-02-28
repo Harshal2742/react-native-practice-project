@@ -1,4 +1,4 @@
-const API_KEY = '5ac90205e82f420bbf0c62f6bf81eb84';
+const API_KEY = process.env.MAP_API_KEY;
 
 export const getMapUri = (lon, lat) => {
 	const uri = `https://maps.geoapify.com/v1/staticmap?style=osm-carto&width=600&height=400&marker=lonlat:${lon},${lat};color:%23ff0000;size:medium&zoom=13&apiKey=${API_KEY}`;
